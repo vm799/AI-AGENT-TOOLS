@@ -3,6 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+- Changelog will now be updated each time a new file is added and pushed to the repository.
 
 ## [0.1.0] - 2025-08-14
 ### Added

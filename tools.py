@@ -1,6 +1,10 @@
 # tools.py
-import os
-from langchain_community.tools import SerpAPIWrapper
+# Old (broken)
+# from langchain_community.tools import SerpAPIWrapper
+
+# New (works)
+from langchain_community.tools.serpapi import SerpAPIWrapper
+
 
 def get_search_tool():
     """Returns a SerpAPI search tool."""
