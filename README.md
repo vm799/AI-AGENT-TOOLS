@@ -25,6 +25,24 @@ LangChain Agents decide which tool, model, or data source to use for the current
 - Upgrade your data store without touching your model code.
 - Test each layer independently for robust development.
 
+## Step-by-Step Architecture
+
+**Step 1: Data ingestion**
+- Fetch data from PubMed, ClinicalTrials.gov, OpenFDA via their APIs.
+- Store structured results in SQLite / Postgres.
+
+**Step 2: LangChain agent**
+- Use langchain_experimental agent tools to query your database or APIs.
+- Wrap queries in structured prompts to avoid hallucinations (critical in medical context).
+
+**Step 3: Logging & tracking**
+- Use langsmith for experiment logs, queries, and outputs.
+- Keep a query-response history for auditability.
+
+**Step 4: Optional fine-tuning / embeddings**
+- Generate vector embeddings for research papers or drug info.
+- Use langchain-text-splitters to break long documents into chunks.
+
 ## Features
 - RAG pipeline with LangChain, Chroma, HuggingFace, and OpenAI.
 - SerpAPI search tool integration.

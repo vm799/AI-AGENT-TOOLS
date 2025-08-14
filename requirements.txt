@@ -1,8 +1,17 @@
-# requirements.txt
-langchain==0.2.5
-langchain-community==0.2.5
-langsmith==0.1.81
-langchain-core==0.2.8
+# requirement.txt 
+langchain==0.3.27
+langchain-core==0.3.74
+langchain-community==0.3.27
 langchain-experimental==0.3.4
 langchain-openai==0.3.30
-langchain-text-splitters==0.2.1
+langsmith==0.4.14
+openai==1.99.9
+chromadb==0.4.6
+fastapi==0.99.1
+pydantic==1.10.14
+
+
+# Medical data tools
+pubmedpy==0.2.3  # or other PubMed API wrapper
+fda-api-client==0.1.2  # OpenFDA client
+pandas==2.1.1
