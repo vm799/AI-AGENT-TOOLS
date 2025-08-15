@@ -1,17 +1,28 @@
 # requirement.txt 
+# Core AI + LangChain
 langchain==0.3.27
 langchain-core==0.3.74
 langchain-community==0.3.27
-langchain-experimental==0.3.4
 langchain-openai==0.3.30
+langchain-text-splitters==0.3.9
+langchain-experimental==0.3.4
 langsmith==0.4.14
+
+# LLM + API clients
 openai==1.99.9
-chromadb==0.4.6
-fastapi==0.99.1
-pydantic==1.10.14
+requests==2.32.3
 
+# FastAPI (Pydantic v2 compatible)
+fastapi==0.115.0
+uvicorn==0.30.1
 
-# Medical data tools
-pubmedpy==0.2.3  # or other PubMed API wrapper
-fda-api-client==0.1.2  # OpenFDA client
-pandas==2.1.1
+# Medical data packages
+pymed==0.8.9  # PubMed API wrapper
+
+# Data & Utils
+pydantic==2.11.7
+typing-extensions>=4.12.2
+typing-inspection>=0.4.0
+
+# Optional: for async & websocket comms
+websockets==15.0.1
