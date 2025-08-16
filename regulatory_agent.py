@@ -7,7 +7,6 @@ from langchain.agents import initialize_agent, AgentType
 from langchain.tools import Tool
 from langchain.memory import ConversationBufferMemory
 
-from langchain_openai import ChatOpenAI
 #from langchain.tools.python.tool import PythonREPLTool
 
 from tools import get_search_tool

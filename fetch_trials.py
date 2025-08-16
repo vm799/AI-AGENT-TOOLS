@@ -1,6 +1,6 @@
 # fetch_trials.py
 import os
-from pymed import PubMed
+
 from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
@@ -13,8 +13,6 @@ from langchain.chat_models import ChatOpenAI
 # Set your OpenAI API key
 os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
 
-# PubMed setup
-pubmed = PubMed(tool="MedicalAI", email="your_email@example.com")
 
 # -----------------------------
 # FUNCTIONS

@@ -1,7 +1,7 @@
 # tools.py
 import os
-from langchain.tools.python.tool import PythonREPLTool  # Correct for langchain 0.3.27
-from langchain.tools.serpapi import SerpAPIWrapper  # Correct for langchain-community 0.3.27
+from langchain.utilities import SerpAPIWrapper
+from langchain.tools import PythonREPLTool
 
 def get_search_tool():
     """Returns a SerpAPI search tool."""
@@ -11,7 +11,6 @@ def get_search_tool():
     
     return SerpAPIWrapper(serpapi_api_key=serp_api_key)
 
-
 def get_python_tool():
-    """Returns a Python REPL tool for code execution."""
+    """Returns a Python REPL tool."""
     return PythonREPLTool()

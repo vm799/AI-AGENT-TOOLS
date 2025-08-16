@@ -1,8 +1,8 @@
 # rag_tool.py
 from langchain.chains import RetrievalQA
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.llms import OpenAI
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.vectorstores import Chroma
+from langchain.chat_models import OpenAI
 import os
 
 def get_rag_tool():
